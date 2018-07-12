@@ -1,0 +1,15 @@
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.sublime*
+node_modules/
+npm-debug.*
+*.psd
+*.docx
+Museo-Sans/
+build/
+source/img/newVector
+Thumbs.db
+img/
