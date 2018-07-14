@@ -1,8 +1,8 @@
 {
-  "name": "landingPage",
+  "name": "Ogonek",
   "version": "1.0.0",
   "private": true,
-  "description": "Лэндинг компании Digital Tsunami",
+  "description": "Landing for restaurant 'Ogonek'",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^8.1.0",
@@ -67,6 +67,7 @@
     "gulp-htmlmin": "^4.0.0",
     "gulp-pngquant": "^1.0.12",
     "imagemin-jpeg-recompress": "^5.1.0",
+    "owl.carousel": "^2.3.4",
     "pump": "^3.0.0"
   }
 }

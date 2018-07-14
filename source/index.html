@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ogonek</title>
+
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/MuseoSansCyrl-100/MuseoSansCyrl-100.woff2" as="font">
+  <link rel="preload" href="fonts/MuseoSansCyrl-300/MuseoSansCyrl-300.woff2" as="font">
+  <link rel="preload" href="fonts/DINBold/DIN-Bold.woff2" as="font">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="slider/dist/assets/owl.carousel.min.css" />
+
+</head>
+<body>
+
+  <div style="display: none">
+    <include src="build/img/sprite/sprite.svg"></include>
+  </div>
+
+  <header class="page-header page-header--index">
+    <section class="page-header__info info">
+      <div class="info__wrapper">
+
+        <div class="info__logo">
+          <a class="info__logo" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/others/logo@2x.png">
+              <source media="(min-width: 768px)" srcset="img/others/logo@3x.png">
+              <img src="img/others/logo.png" alt="Логотип ресторана Огонек" width="231" height="88">
+            </picture>
+          </a>
+        </div>
+
+        <div class="info__contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="info__tel">
+            <a class="info__tel-link" href="tel:+7 (4932) 39-29-29" rel="nofollow">+7 (4932) 39-29-29</a>
+          </p>
+          <p class="info__working-time">вс-чт 12:00–00:00, пт-сб 12:00–02:00</p>
+        </div>
+
+        <div class="info__btn">
+          <h2 class="visually-hidden">Забронировать столик</h2>
+          <button class="info__btn-book btn">Забронировать</button>
+        </div>
+
+        <div class="info__social social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="social__list social__list--header">
+
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="https://www.facebook.com/ogonek" target="_blank" aria-label="Переход на наш аккаунт в Фейсбуке">Facebook
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" role="img">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link social__link--insta" href="https://www.intagram.com/ogonek" target="_blank" aria-label="Переход на наш аккаунт в Интаграмме">Instagram
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" role="img">
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/ogonek" target="_blank" aria-label="Переход на наш аккаунт в Вконтакте">Вконтакте
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" role="img">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="recommendation">
+          <p class="recommendation__text">Нас рекомендуют на</p>
+          <a class="recommendation__link">
+            <img class="recommendation__img" src="img/others/trip-advisor.jpg" alt="trip-advisor">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-header__promo">
+      <div class="owl-carousel" id="carouselOne">
+        <div><img src="img/content-img/1.jpg" alt="Изображение № 1"></div>
+        <div><img src="img/content-img/2.jpg" alt="Изображение № 2"></div>
+        <div><img src="img/content-img/3.jpg" alt="Изображение № 3"></div>
+        <div><img src="img/content-img/4.jpg" alt="Изображение № 4"></div>
+        <div><img src="img/content-img/5.jpg" alt="Изображение № 5"></div>
+        <div><img src="img/content-img/6.jpg" alt="Изображение № 6"></div>
+      </div>
+    </section>
+  </header>
+
+  <main class="container main">
+    <section class="banquet-hall">
+
+      <div class="banquet-hall__img-wrapper">
+        <img class="banquet-hall__img" src="/img/content-img/1.jpg" alt="Банкетный холл ресторана Огонек">
+      </div>
+
+      <div class="banquet-hall__content">
+        <div class="banquet-hall__content-wrapper">
+          <h2 class="banquet-hall__title">Банкетный зал</h2>
+          <p class="banquet-hall__description">Отдельного внимания заслуживает лавочка при ресторане, в которой
+          продаются фермерские сыры от сыроделов из Ивановской области, вяленое мясо собственного производства, грузинские специи, необычные.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="menu">
+      <div class="menu__img-wrapper">
+        <img class="menu__img-main" src="img/content-img/menu.png" alt="Меню ресторана Огонек">
+      </div>
+
+      <div class="menu__info">
+
+        <div class="menu__content">
+          <h2 class="menu__title">Меню</h2>
+          <p class="menu__description">Вы можете ознакомиться <br> с нашим меню</p>
+        </div>
+
+        <div class="menu__btn">
+          <h2 class="visually-hidden">Смотреть меню</h2>
+          <a class="menu__btn-view btn" href="#">Смотреть меню</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="dishes">
+
+    </section>
+
+    <section class="about-us">
+
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <section class="page-footer__contacts contacts container">
+      <div class="contacts__address">
+        <p class="contacts__address-key">Адрес</p>
+        <p class="contacts__address-text">Иваново, Шереметевский проспект 1</p>
+      </div>
+
+      <div class="contacts__phone">
+        <p class="contacts__phone-key">Телефон</p>
+        <a class="contacts__phone-link" href="tel:+7 (4932) 39-29-29" rel="nofollow">+7 (4932) 39-29-29</a>
+      </div>
+
+      <div class="contacts__social social">
+        <p class="contacts__social-key">Соц. сети</p>
+        <ul class="social__list social__list--footer">
+
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="https://www.facebook.com/ogonek" target="_blank" aria-label="Переход на наш аккаунт в Фейсбуке">Facebook
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="22" role="img">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--insta" href="https://www.intagram.com/ogonek" target="_blank" aria-label="Переход на наш аккаунт в Интаграмме">Instagram
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" role="img">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/ogonek" target="_blank" aria-label="Переход на наш аккаунт в Вконтакте">Вконтакте
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" role="img">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="page-footer__map" id="map" aria-label="map"></section>
+    <section class="page-footer__copyright container">
+      <p class="copyright__text">© 2018, Ресторан ОГОНЁК. Все права защищены</p>
+    </section>
+  </footer>
+
+
+  <script src="js/min/jquery 3.3.1.min.js"></script>
+  <script src="slider/dist/owl.carousel.min.js"></script>
+  <script src="js/slider.js"></script>
+  <!-- <script src="js/min/map.min.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZef9VPHAYfM1gCURr-_CfjkiFLwld4rU&callback=initialize"></script> -->
+  <script src="js/min/picturefill.min.js"></script>
+
+</body>
+</html>

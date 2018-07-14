@@ -1,0 +1,73 @@
+.info__logo {
+  width: 130px;
+  height: 60px;
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 10px;
+  }
+  @include desktop {
+    width: 231px;
+    height: 88px;
+    margin-top: 60px;
+  }
+}
+
+.info {
+  padding: 20px 0;
+}
+
+.info__contacts {
+  margin-bottom: 20px;
+  @include desktop {
+    margin-top: 40px;
+  }
+}
+
+.info__tel {
+  text-align: center;
+}
+
+.info__tel-link {
+  letter-spacing: 0.7px;
+  font: 20px $din;
+}
+
+.info__working-time {
+  font: 14px/21px $ms100;
+  color: rgba(206, 185, 166, 0.6);
+  margin-top: -10px;
+  text-align: center;
+}
+
+.info__btn {
+  width: 60%;
+  min-width: 230px;
+  max-width: 340px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  @include tablet {
+    min-width: 200px;
+    width: 90%;
+  }
+  @include desktop {
+    min-width: 260px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+.info__btn-book {
+  letter-spacing: 1.4px;
+  font-weight: 600;
+}
+
+.info__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @include tablet {
+    padding: 0 15px;
+  }
+}

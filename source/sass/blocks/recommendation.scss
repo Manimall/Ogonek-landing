@@ -1,0 +1,26 @@
+.recommendation__img {
+  border: 5px solid white;
+  object-fit: contain;
+}
+
+.recommendation__text {
+  font: bold 18px/24px $din;
+  color: #ffffff;
+  margin-bottom: 10px;
+  @include tablet {
+    margin-top: 10px;
+  }
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+.recommendation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include desktop {
+    margin-top: 70px;
+  }
+}

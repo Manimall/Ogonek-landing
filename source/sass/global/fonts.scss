@@ -1,0 +1,42 @@
+// DINBold
+// MuseoSansCyrl-100
+// MuseoSansCyrl-300
+
+@font-face {
+    font-family: 'DIN'; /* DINBold */
+
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+
+    src:
+        url('../fonts/DINBold/DIN-Bold.woff2') format('woff2'),
+        url('../fonts/DINBold/DIN-Bold.woff') format('woff'),
+        url('../fonts/DINBold/DINBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 100'; /* MuseoSansLight */
+
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+
+    src:
+        url('../fonts/MuseoSansCyrl-100/MuseoSansCyrl-100.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-100/MuseoSansCyrl-100.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-100/MuseoSansCyrl-100.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 300'; /* MuseoSansRegular */
+
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+
+    src:
+        url('../fonts/MuseoSansCyrl-300/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-300/MuseoSansCyrl-300.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-300/MuseoSansCyrl-300.ttf') format('truetype');
+}

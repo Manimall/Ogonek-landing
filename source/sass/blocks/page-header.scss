@@ -1,0 +1,53 @@
+.page-header {
+  background-color: rgb(11, 10, 10);
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    height: 430px;
+  }
+  @include desktop {
+    height: 700px;
+  }
+}
+
+.page-header__info {
+  @include tablet {
+    flex: 1 0 30%;
+  }
+}
+
+.page-header__promo {
+  overflow: hidden;
+  @include tablet {
+    flex: 1 0 70%;
+  }
+}
+
+.page-header__promo .owl-carousel {
+  @include tablet {
+
+  }
+  @include desktop {
+    // height: 900px;
+  }
+}
+
+// .page-header__promo .owl-nav,
+.page-header__promo .owl-dots{
+  display: none;
+}
+
+#carouselOne {
+  max-height: 740px;
+}
+
+.owl-item div img {
+  @include tablet {
+    height: 430px;
+  }
+  @include desktop {
+    height: 700px;
+    width: 1008px;
+  }
+}

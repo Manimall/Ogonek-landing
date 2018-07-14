@@ -1,0 +1,92 @@
+.main {
+  background-color: $bgcMain;
+}
+
+.banquet-hall {
+  background-color: $sectionBgc;
+  margin-top: 55px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    background-color: unset;
+    margin-top: 85px;
+  }
+}
+
+.banquet-hall__img-wrapper {
+  order: 2;
+  z-index: 3;
+  @include tablet {
+    order: unset;
+    flex: 1 0 42%;
+    width: 604px;
+    height: 440px;
+    border: 2px solid #1d1c1b;
+    padding: 40px 20px 0;
+    position: relative;
+  }
+}
+
+.banquet-hall__img {
+  @include tablet {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+  }
+}
+
+.banquet-hall__content {
+  order: 1;
+  position: relative;
+  @include tablet {
+    order: unset;
+    background-color: $sectionBgc;
+    flex: 1 0 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @include desktop {
+    height: 440px;
+    margin-left: -150px;
+    margin-top: 20px;
+  }
+}
+
+.banquet-hall__content::after {
+  @include pseudo-element();
+  background: transparent url('/img/others/list.png') no-repeat;
+  background-size: cover;
+  width: 74px;
+  height: 68px;
+  right: 0;
+  top: -12px;
+  @include tablet {
+    bottom: 0;
+    top: unset;
+  }
+  @include desktop {
+    width: 134px;
+    height: 125px;
+    right: 0;
+    transform: translate(32%, 53%);
+  }
+}
+
+.banquet-hall__content-wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+  @include desktop {
+    width: 480px;
+    padding-right: 0;
+    padding-left: 90px;
+  }
+}
+
+.banquet-hall__description {
+  font: 14px/24px $ms100;
+}
+

@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  max-width: 360px;
+  height: 54px;
+  border-radius: 27px;
+  background-color: transparent;
+  border: solid 1px #96735e;
+  text-align: center;
+  color: #96735e;
+  cursor: pointer;
+  font: bold 18px/24px $din;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #96735e;
+    color: #ffffff;
+  }
+
+  &:active,
+  &:focus {
+    color: #ffffff;
+    background-color: #6d5242;
+    border-color: #6d5242;
+  }
+};
