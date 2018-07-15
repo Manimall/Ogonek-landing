@@ -1,21 +1,109 @@
-.menu {}
+.menu {
+  position: relative;
+  z-index: 1;
+}
+
+.menu__inner {
+  display: flex;
+  z-index: 3;
+  background-color: $sectionBgc;
+  flex-direction: column;
+  margin-bottom: 50px;
+  @include tablet {
+    flex-direction: row;
+    max-height: 371px;
+    margin-bottom: 100px;
+  }
+  @include realdt {
+    margin-bottom: 150px;
+  }
+}
+
+.menu__inner::after {
+  @include pseudo-element();
+  background-image: url('/img/others/texture.png');
+  height: 200px;
+  left: -5%;
+  top: 75%;
+  width: 110%;
+  z-index: -1;
+}
 
 .menu__img-wrapper {
   display: inline-block;
+  order: 2;
+  margin: 0 auto;
+  @include tablet {
+    order: unset;
+    margin: 0 10px;
+    margin-right: 0;
+    margin-top: -45px;
+  }
+  @include laptop {
+    display: flex;
+    flex: 1 0 50%;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
 }
 
-.menu__info {}
+.menu__img-main {
+  max-height: 390px;
+  @include tablet {
+    max-height: unset;
+  }
+}
 
-.menu__content {}
+.menu__info {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  @include tablet {
+    order: unset;
+    justify-content: center;
+    flex: 1 0 auto;
+  }
+  @include laptop {
+    flex: 1 0 50%;
+  }
+}
 
-.menu__title {}
+.menu__content {
+  text-align: center;
+  margin-bottom: 30px;
+  @include laptop {
+    display: flex;
+    min-width: 340px;
+    justify-content: space-between;
+    text-align: unset;
+    align-items: center;
+  }
+}
 
-.menu__description {}
+.menu__title {
+  @include laptop {
+    margin-left: 12px;
+  }
+  @include realdt {
+    font-size: 45px;
+  }
+}
 
-.menu__btn {}
+.menu__description {
+  @include laptop {
+    margin-top: 22px;
+  }
+}
 
-.visually-hidden {}
+.menu__btn {
+  min-width: 240px;
+  width: 80%;
+  max-width: 340px;
+}
 
-.menu__btn-view {}
+.menu__btn-view {
+  //smth
+}
 
-.btn {}

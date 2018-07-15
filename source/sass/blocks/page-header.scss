@@ -40,6 +40,7 @@
 
 #carouselOne {
   max-height: 740px;
+  max-width: 1220px;
 }
 
 .owl-item div img {
@@ -49,5 +50,6 @@
   @include desktop {
     height: 700px;
     width: 1008px;
+    max-width: 1220px;
   }
 }

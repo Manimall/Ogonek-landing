@@ -56,6 +56,11 @@ li {
     min-width: $laptop-width;
   }
 
+  @include realdt {
+    padding: 0 $laptop-pads;
+    min-width: $realdt-width;
+  }
+
   @include desktop {
     padding: 0 $desktop-pads;
     max-width: $desktop-width;
@@ -89,10 +94,30 @@ h3 {
   @include tablet {
     font-size: 32px;
   }
-  @include desktop {
+  @include laptop {
+    font-size: 38px;
+  }
+  @include realdt {
     font-size: 52px;
   }
 }
+
+// p {
+//   font-size: 14px;
+//   line-height: 24px;
+//   @include tablet {
+//     font-size: 16px;
+//     line-height: 30px;
+//   }
+//   @include laptop {
+//     font-size: 18px;
+//     line-height: 36px;
+//   }
+//   @include realdt {
+//     font-size: 20px;
+//     line-height: 42px;
+//   }
+// }
 
 *:focus {
   outline: none;
