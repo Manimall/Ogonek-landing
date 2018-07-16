@@ -55,9 +55,13 @@
     "*.json",
     "*.js",
     "source/*.html",
-    "source/js/**/*.js",
-    "source/img/**/*.svg",
+    "source/js/own/**/*.js",
     "source/sass/**/*.{sass,scss}"
+  ],
+  "ignores": [
+    "!source/img/**/*",
+    "!source/js/picturefill.js",
+    "!source/js/jquery 3.3.1.js"
   ],
   "engines": {
     "node": "8.9"

@@ -2,18 +2,21 @@
   position: relative;
   width: 100%;
   z-index: 3;
-  background-image: url('/img/content-img/map.jpg');
+  background-image: url("/img/content-img/map.jpg");
   background-repeat: no-repeat;
   background-position: 50% center;
   background-size: cover;
   overflow: hidden;
   min-height: 300px;
+
   @include bgmobile {
     min-height: 380px;
   }
+
   @include tablet {
     min-height: 450px;
   }
+
   @include laptop {
     min-height: 520px;
   }

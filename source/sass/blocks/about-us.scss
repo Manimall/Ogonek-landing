@@ -1,6 +1,6 @@
 .about-us {
   margin-bottom: 20px;
-  // background: url('/img/others/textureBottom.png');
+  // background: url("/img/others/textureBottom.png");
   z-index: 1;
   position: relative;
 }
@@ -12,10 +12,12 @@
   z-index: 3;
   box-shadow: 6px 10px 0 1px $sectionBgc;
   margin-bottom: 30px;
+
   @include tablet {
     box-shadow: 17px 18px 0 1px $sectionBgc;
     margin-bottom: 50px;
   }
+
   @include realdt {
     box-shadow: 25px 25px 0 1px $sectionBgc;
   }
@@ -23,7 +25,7 @@
 
 .team__wrapper::before {
   @include pseudo-element();
-  background: url('/img/others/list3.png') no-repeat;
+  background: url("/img/others/list3.png") no-repeat;
   background-size: cover;
   width: 40px;
   height: 76px;
@@ -31,11 +33,13 @@
   z-index: 2;
   bottom: 0;
   transform: translateY(52%);
+
   @include tablet {
     transform: translateY(43%);
     width: 60px;
     height: 115px;
   }
+
   @include realdt {
     width: 92px;
     height: 176px;
@@ -46,14 +50,15 @@
   @include tablet {
     padding: 0 36px;
   }
-  @includa laptop {
+
+  @include laptop {
     padding: 0 45px;
   }
 }
 
 .about-us::after {
   @include pseudo-element();
-  background-image: url('/img/others/textureBottom.png');
+  background-image: url("/img/others/textureBottom.png");
   // background-position: center -17px;
   height: 75%;
   min-height: 300px;
@@ -61,10 +66,12 @@
   top: 30%;
   width: 100%;
   z-index: -1;
+
   @include tablet {
     height: 63.5%;
     top: 40%;
   }
+
   @include realdt {
     // height: 200px;
     height: 52%;
@@ -75,6 +82,7 @@
 .team__wrapper img {
   max-height: 320px;
   position: relative;
+
   @include tablet {
     max-height: 550px;
   }
@@ -87,10 +95,12 @@
   z-index: -1;
   outline: 1px solid #1d1c1b;
   transform: translate(-8px, -7px);
+
   @include tablet {
     transform: translate(-13px, -20px);
-    outline: 2px solid #1d1c1b;;
+    outline: 2px solid #1d1c1b;
   }
+
   @include realdt {
     transform: translate(-20px, -27px);
   }
@@ -102,6 +112,7 @@
   margin-left: 15px;
   margin-bottom: 12px;
   position: absolute;
+
   @include tablet {
     // margin-top: -10%;
     // line-height: 2.3;

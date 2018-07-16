@@ -91,12 +91,15 @@ h2,
 h3 {
   color: #ffffff;
   font: bold 24px/26px $din;
+
   @include tablet {
     font-size: 32px;
   }
+
   @include laptop {
     font-size: 38px;
   }
+
   @include realdt {
     font-size: 52px;
   }
