@@ -17,7 +17,6 @@
 .banquet-hall__inner {
   background-color: $sectionBgc;
   display: flex;
-  // min-height: fill-available;
   flex-direction: column;
   @include tablet {
     flex-direction: row;
@@ -130,4 +129,3 @@
 .banquet-hall__description {
   font: 14px/24px $ms100;
 }
-
