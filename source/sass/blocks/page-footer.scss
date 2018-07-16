@@ -1,0 +1,11 @@
+.page-footer__map {
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  @include tablet {
+    min-height: 400px;
+  }
+  @include laptop {
+    min-height: 500px;
+  }
+}

@@ -9,3 +9,9 @@
 .copyright__text {
   text-align: center;
 }
+
+.copyright__text br {
+  @include tablet {
+    display: none;
+  }
+}

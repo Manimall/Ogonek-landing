@@ -1,11 +1,11 @@
 .about-us {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   // background: url('/img/others/textureBottom.png');
   z-index: 1;
   position: relative;
 }
 
-.about-us__wrapper {
+.team__wrapper {
   position: relative;
   margin: 0 auto;
   width: fit-content;
@@ -21,7 +21,7 @@
   }
 }
 
-.about-us__wrapper::before {
+.team__wrapper::before {
   @include pseudo-element();
   background: url('/img/others/list3.png') no-repeat;
   background-size: cover;
@@ -42,23 +42,37 @@
   }
 }
 
-.about-us::after {
-  @include pseudo-element();
-  background-image: url('/img/others/textureBottom.png');
-  background-position: center -17px;
-  height: 100px;
-  left: -5%;
-  top: 75%;
-  width: 110%;
-  z-index: -1;
-  @include realdt {
-    height: 200px;
-    width: 120%;
-    left: -10%;
+.team {
+  @include tablet {
+    padding: 0 36px;
+  }
+  @includa laptop {
+    padding: 0 45px;
   }
 }
 
-.about-us__wrapper img {
+.about-us::after {
+  @include pseudo-element();
+  background-image: url('/img/others/textureBottom.png');
+  // background-position: center -17px;
+  height: 75%;
+  min-height: 300px;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  z-index: -1;
+  @include tablet {
+    height: 63.5%;
+    top: 40%;
+  }
+  @include realdt {
+    // height: 200px;
+    height: 52%;
+    top: 50%;
+  }
+}
+
+.team__wrapper img {
   max-height: 320px;
   position: relative;
   @include tablet {
@@ -66,7 +80,7 @@
   }
 }
 
-.about-us__outline {
+.team__outline {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -82,7 +96,7 @@
   }
 }
 
-.about-us__title {
+.team__title {
   margin-top: -52px;
   line-height: 1.5;
   margin-left: 15px;

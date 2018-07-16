@@ -3,20 +3,25 @@
 }
 
 .banquet-hall {
+  margin: 55px auto 45px;
+  @include tablet {
+    margin-top: 85px;
+    margin-bottom: 100px;
+  }
+  @include realdt {
+    margin-bottom: 160px;
+    max-width: $desktop-width;
+  }
+}
+
+.banquet-hall__inner {
   background-color: $sectionBgc;
-  margin-top: 55px;
-  margin-bottom: 45px;
   display: flex;
   // min-height: fill-available;
   flex-direction: column;
   @include tablet {
     flex-direction: row;
     background-color: unset;
-    margin-top: 85px;
-    margin-bottom: 100px;
-  }
-  @include realdt {
-    margin-bottom: 160px;
   }
 }
 

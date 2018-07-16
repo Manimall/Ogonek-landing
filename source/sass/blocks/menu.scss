@@ -1,34 +1,45 @@
 .menu {
   position: relative;
   z-index: 1;
-}
-
-.menu__inner {
-  display: flex;
-  z-index: 3;
-  background-color: $sectionBgc;
-  flex-direction: column;
   margin-bottom: 50px;
+  margin-top: 20px;
   @include tablet {
-    flex-direction: row;
-    max-height: 371px;
     margin-bottom: 100px;
+    margin-top: 40px;
   }
   @include realdt {
     margin-bottom: 150px;
   }
 }
 
+.menu__inner {
+  display: flex;
+  z-index: 3;
+  margin: 0 auto;
+  background-color: $sectionBgc;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    max-height: 371px;
+  }
+  @include realdt {
+    max-width: 980px;
+  }
+}
+
 .menu__inner::after {
   @include pseudo-element();
   background-image: url('/img/others/texture.png');
-  height: 200px;
-  left: -5%;
+  height: 50%; //300px
+  left: 0;
   top: 75%;
-  width: 110%;
+  width: 100%;
   z-index: -1;
+  @include tablet {
+    height: 420px;
+  }
   @include realdt {
-    height: 500px;
+    // height: 700px;
   }
 }
 

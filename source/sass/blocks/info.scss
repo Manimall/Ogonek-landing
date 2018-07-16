@@ -27,6 +27,15 @@
   text-align: center;
 }
 
+.info__tel:hover .info__tel-link {
+  color: #96735e;
+}
+
+.info__tel:active .info__tel-link,
+.info__tel:focus .info__tel-link {
+  color: #6d5242;
+}
+
 .info__tel-link {
   letter-spacing: 0.7px;
   font: 20px $din;
