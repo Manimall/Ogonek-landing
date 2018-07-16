@@ -27,6 +27,9 @@
   top: 75%;
   width: 110%;
   z-index: -1;
+  @include realdt {
+    height: 500px;
+  }
 }
 
 .menu__img-wrapper {

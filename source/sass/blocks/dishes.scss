@@ -1,0 +1,18 @@
+.dishes {
+  min-height: 300px;
+  position: relative;
+  background-color: $sectionBgc;
+  margin-bottom: 60px;
+  z-index: 1;
+  @include tablet {
+    min-height: 413px;
+    margin-bottom: 100px;
+  }
+  @include realdt {
+    margin-bottom: 160px;
+  }
+}
+
+.dishes__inner {
+  //smth
+}
