@@ -21,6 +21,7 @@ var uglify = require("gulp-uglify");
 var pump = require("pump");
 var svgmin = require("gulp-svgmin");
 var sourcemaps = require("gulp-sourcemaps");
+var ghpages = require("gh-pages");
 
 gulp.task("minify", function (cb) {
   pump([
@@ -148,3 +149,5 @@ gulp.task("serve", function() {
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
   gulp.watch("source/js/**/*.js", ["minify"]).on("change", server.reload);
 });
+
+ghpages.publish("build");

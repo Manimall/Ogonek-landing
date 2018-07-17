@@ -121,4 +121,8 @@
     bottom: 3%;
     left: 2%;
   }
+
+  @include laptop {
+    display: none;
+  }
 }
