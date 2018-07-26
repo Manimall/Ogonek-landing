@@ -10,7 +10,7 @@ npm-debug.*
 *.docx
 Thumbs.db
 wp-includes/**/*
-/*wp-**.php
+wp-**.php
 readme.html
 /wp-admin/**/*
 /wp-content/plugins/**/*
