@@ -17,7 +17,6 @@ readme.html
 /wp-content/uploads/**/*
 /wp-content/upgrade/**/*
 /wp-content/languages/**/*
-# /wp-content/themes/**/*
 /wp-content/themes/twentyfifteen/**/*
 /wp-content/themes/twentyseventeen/**/*
 /wp-content/themes/twentysixteen/**/*
