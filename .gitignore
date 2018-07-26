@@ -10,7 +10,8 @@ npm-debug.*
 *.docx
 Thumbs.db
 wp-includes/**/*
-*wp**.php
+*wp-*.php
+/readme.html
 /wp-admin/**/*
 /wp-content/plugins/**/*
 /wp-content/uploads/**/*
@@ -22,6 +23,6 @@ wp-includes/**/*
 /wp-content/themes/twentysixteen/**/*
 /wp-content/themes/index.php
 /wp-content/themes/ogonek-theme/assets/slider/**/*
-/wp-content/themes/ogonek-theme/assets/images/**/*
+/wp-content/themes/ogonek-theme/assets/img/**/*
 /wp-content/themes/ogonek-theme/menu/**/*
 /wp-content/themes/ogonek-theme/leclick/**/*
